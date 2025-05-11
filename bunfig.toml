@@ -1,0 +1,19 @@
+# Bun configuration file
+# See https://bun.sh/docs/runtime/bunfig for more information
+
+[install]
+# Use exact versions for dependencies
+exact = false
+
+# Registry to use for packages
+registry = "https://registry.npmjs.org"
+
+# Install peer dependencies automatically
+peer = true
+
+# Cache directory for packages
+cache = ".bun"
+
+[run]
+# Default environment variables for scripts
+env = { NODE_ENV = "development" }

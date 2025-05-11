@@ -1,0 +1,49 @@
+/* Custom styles for toast notifications */
+
+/* Error toast styling */
+.error-toast {
+  border-left: 3px solid hsl(var(--destructive)) !important;
+  background-color: hsl(var(--destructive) / 0.1) !important;
+  color: hsl(var(--destructive-foreground)) !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  padding: 0.75rem 1rem !important;
+}
+
+/* Make close button more visible */
+[data-sonner-toast] [data-close-button] {
+  opacity: 1 !important;
+  background-color: hsl(var(--muted) / 0.2) !important;
+  border-radius: 4px !important;
+  padding: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.2s ease !important;
+  scale: 0.9 !important;
+}
+
+[data-sonner-toast] [data-close-button]:hover {
+  background-color: hsl(var(--muted) / 0.5) !important;
+}
+
+/* Compact toast styling */
+[data-sonner-toast] {
+  max-width: 320px !important;
+  padding: 0.75rem !important;
+}
+
+[data-sonner-toast] [data-title] {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+}
+
+[data-sonner-toast] [data-description] {
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Make error toasts stand out more */
+[data-sonner-toast][data-type="error"] {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
